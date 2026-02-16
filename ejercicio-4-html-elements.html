@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - HTML Elements - Mario Alejandro Verdugo</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 900px; 
+            margin: 20px auto; 
+            padding: 25px; 
+            background: #fafafa; 
+            line-height: 1.7;
+        }
+        h1, h2 { color: #1a365d; }
+        h1 { text-align: center; border-bottom: 3px solid #4299e1; padding-bottom: 15px; }
+        .ejemplo {
+            background: #e6f3ff;
+            border: 2px solid #bee3f8;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .tabla-elementos {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .tabla-elementos th, .tabla-elementos td {
+            border: 1px solid #cbd5e0;
+            padding: 12px;
+            text-align: left;
+        }
+        .tabla-elementos th { background: #3182ce; color: white; }
+        code { background: #f7fafc; padding: 2px 5px; border-radius: 3px; font-family: monospace; }
+        .nota { background: #fff3cd; padding: 15px; border-left: 5px solid #ffc107; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <h1>HTML Elements - Ejercicio 4</h1>
+    <p><strong>Mario Alejandro Verdugo Alvarez</strong> | Cuenta: 20189184 | Grupo 3-01 | 16 Feb 2026</p>
+
+    <div class="ejemplo">
+        <h2>Ejemplo básico de elementos HTML</h2>
+        <p>Elemento con start tag, content y end tag:</p>
+        <h3>Ejemplo 1: &lt;h1&gt; y &lt;p&gt;</h3>
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Elementos anidados (nested)</h2>
+        <p>Documento completo con elementos dentro de otros:</p>
+        <code>&lt;!DOCTYPE html&gt;</code>
+        <code>&lt;html&gt;</code>
+        <code>&nbsp;&nbsp;&lt;body&gt;</code>
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Mi Heading&lt;/h1&gt;</code>
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Mi párrafo.&lt;/p&gt;</code>
+        <code>&nbsp;&nbsp;&lt;/body&gt;</code>
+        <code>&lt;/html&gt;</code>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Tabla de elementos (Start tag | Content | End tag)</h2>
+        <table class="tabla-elementos">
+            <tr>
+                <th>Start tag</th>
+                <th>Element content</th>
+                <th>End tag</th>
+            </tr>
+            <tr>
+                <td><code>&lt;h1&gt;</code></td>
+                <td>My First Heading</td>
+                <td><code>&lt;/h1&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;p&gt;</code></td>
+                <td>My first paragraph.</td>
+                <td><code>&lt;/p&gt;</code></td>
+            </tr>
+            <tr>
+                <td><code>&lt;br&gt;</code></td>
+                <td>(none)</td>
+                <td>(none)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ejemplo">
+        <h2>Elemento vacío: &lt;br&gt;</h2>
+        <p>Este es un párrafo con una</p>
+        <br>
+        <p>línea nueva usando &lt;br&gt; (elemento vacío sin end tag).</p>
+    </div>
+
+    <div class="nota">
+        <h2>¡Nunca te olvides de el end tag!</h2>
+        <p>Algunos navegadores lo perdonan, pero puede causar errores:</p>
+        <p>&lt;p&gt;Este párrafo está incompleto sin &lt;/p&gt;</p>
+        <p>&lt;p&gt;Este segundo también... ¡pero mejor siempre cerrar!&lt;/p&gt;</p>
+    </div>
+
+    <div class="ejemplo">
+        <h2>HTML no es case sensitive</h2>
+        <p>Estas tres son iguales: <code>&lt;P&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;P&gt;</code></p>
+        <p>Pero W3Schools recomienda siempre <strong>minúsculas</strong>.</p>
+        <P>¡Mira, hasta mayúsculas funciona!&lt;/P&gt;</P>
+    </div>
+
+    <hr style="margin: 40px 0;">
+    <p style="text-align: center; font-size: 14px; color: #666;">
+        Ejercicio completado para materia Desarrollo Web - Dr. Herman Geovany Ayala Zúñiga
+    </p>
+</body>
+</html>
