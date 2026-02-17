@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Base styles */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* Padding uniforme */
+.padding-uniform th, .padding-uniform td {
+  padding: 15px;
+}
+
+/* Padding individual */
+.padding-individual th, .padding-individual td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+/* Cellspacing - espacio entre celdas */
+.spacing table {
+  border-spacing: 30px;
+  border-collapse: separate;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Padding & Spacing:</h2>
+
+<!-- Padding uniforme 15px todas direcciones -->
+<h3>Padding uniforme (15px):</h3>
+<table class="padding-uniform">
+  <tr>
+    <th>Header</th>
+    <th>Header</th>
+  </tr>
+  <tr>
+    <td>hello</td>
+    <td>hello</td>
+  </tr>
+</table>
+
+<!-- Padding individual -->
+<h3>Padding individual:</h3>
+<table class="padding-individual">
+  <tr>
+    <th>10px top</th>
+    <th>20px bottom</th>
+  </tr>
+  <tr>
+    <td>30px left</td>
+    <td>40px right</td>
+  </tr>
+</table>
+
+<!-- Cellspacing 30px entre celdas -->
+<h3>Cellspacing (30px):</h3>
+<table class="spacing">
+  <tr>
+    <th>Espacio</th>
+    <th>Entre</th>
+  </tr>
+  <tr>
+    <td>Celdas</td>
+    <td>30px</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
