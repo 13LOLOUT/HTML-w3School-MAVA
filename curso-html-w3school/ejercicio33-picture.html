@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Picture Element - Responsive Images</h2>
+
+<!-- Ejemplo 1: Diferentes imagenes por tamaño pantalla -->
+<picture>
+  <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+  <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+  <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Imagen por defecto" style="width:auto;">
+</picture>
+
+<!-- Ejemplo 2: Diferentes formatos (browser elige primero que reconoce) -->
+<picture>
+  <source srcset="https://www.w3schools.com/html/img_avatar.png">
+  <source srcset="https://www.w3schools.com/html/img_girl.jpg">
+  <img src="https://www.w3schools.com/html/img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<!-- Ejemplo 3: Múltiples resoluciones -->
+<picture>
+  <source media="(min-width: 800px)" srcset="https://www.w3schools.com/html/img_chania.jpg">
+  <source media="(max-width: 799px)" srcset="https://www.w3schools.com/html/pic_trulli.jpg">
+  <img src="https://www.w3schools.com/html/img_girl.jpg" alt="Fallback responsive">
+</picture>
+
+<!-- mario verdugo 20189184 -->
+
+</body>
+</html>
