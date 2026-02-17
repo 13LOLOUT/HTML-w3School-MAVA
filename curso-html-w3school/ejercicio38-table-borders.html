@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Border básico */
+table.basic, th.basic, td.basic {
+  border: 1px solid black;
+}
+
+/* Border collapsed (sin doble línea) */
+table.collapsed, th.collapsed, td.collapsed {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/* Invisible borders + background */
+table.invisible th, table.invisible td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  background-color: #96D4D4;
+}
+
+/* Bordes redondeados */
+th.round, td.round {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* Estilos diferentes */
+table.dotted th, table.dotted td { border-style: dotted; }
+table.dashed th, table.dashed td { border-style: dashed; }
+table.double th, table.double td { border-style: double; }
+</style>
+</head>
+<body>
+
+<h2>Table Borders - Todos los estilos:</h2>
+
+<!-- Border básico -->
+<table class="basic">
+  <tr><th>Basic</th><th>Border</th></tr>
+  <tr><td>1px</td><td>solid black</td></tr>
+</table>
+
+<!-- Collapsed -->
+<table class="collapsed">
+  <tr><th>Collapsed</th><th>Border</th></tr>
+  <tr><td>Sin doble</td><td>línea</td></tr>
+</table>
+
+<!-- Bordes redondeados SOLO celdas -->
+<table>
+  <tr><th class="round">Round</th><th class="round">Corners</th></tr>
+  <tr><td class="round">Solo</td><td class="round">td/th</td></tr>
+</table>
+
+<!-- Diferentes estilos -->
+<table class="dotted" border="1px solid gray">
+  <tr><th>Dotted</th><th>-</th></tr>
+  <tr><td>Datos</td><td>.</td></tr>
+</table>
+
+
+</body>
+</html>
