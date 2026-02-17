@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Map - Workplace</h2>
+
+<!-- Imagen con usemap -->
+<img src="https://www.w3schools.com/html/img_workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<!-- Mapa con areas clickeables -->
+<map name="workmap">
+  <!-- Rectangulo Computadora -->
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html" title="Ver Computadora">
+  
+  <!-- Rectangulo Telefono -->
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html" title="Llamar">
+  
+  <!-- Circulo Cafe -->
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html" onclick="alert('¡Café listo!')" title="Tomar Café">
+</map>
+
+<h3>Ejemplos adicionales:</h3>
+
+<!-- Poly ejemplo simplificado -->
+<img src="https://www.w3schools.com/html/img_croissant.jpg" alt="Croissant" usemap="#croissantmap" width="300">
+
+<map name="croissantmap">
+  <area shape="poly" coords="100,50,150,30,200,80,180,120,120,140" alt="Croissant" href="croissant.html">
+</map>
+
+
+</body>
+</html>
