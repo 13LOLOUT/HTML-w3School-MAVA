@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Colgroup - Estilos por columnas:</h2>
+
+<!-- Colgroup span=2 background -->
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
+  <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>2</td>
+    <td>3</td>
+    <td>4</td>
+    <td>5</td>
+  </tr>
+</table>
+
+<!-- Múltiples col con estilos diferentes -->
+<h3>Múltiples columnas:</h3>
+<table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="2" style="background-color: pink">
+    <col style="background-color: lightblue">
+  </colgroup>
+  <tr>
+    <th>LUN</th>
+    <th>MAR</th>
+    <th>MIÉ</th>
+    <th>JUE</th>
+    <th>VIE</th>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>9</td>
+    <td>10</td>
+    <td>11</td>
+    <td>12</td>
+  </tr>
+</table>
+
+<!-- Colgroup VACÍO + estilo en medio -->
+<h3>Estilo en columnas del medio:</h3>
+<table>
+  <colgroup>
+    <col span="2"> <!-- Vacío -->
+    <col span="2" style="background-color: yellow">
+  </colgroup>
+  <tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+  </tr>
+</table>
+
+<!-- Ocultar columnas -->
+<h3>Columna oculta:</h3>
+<table>
+  <colgroup>
+    <col span="2">
+    <col span="1" style="visibility: collapse">
+    <col span="1">
+  </colgroup>
+  <tr>
+    <th>Visible</th>
+    <th>Visible</th>
+    <th>Oculto</th>
+    <th>Visible</th>
+  </tr>
+</table>
+
+</body>
+</html>
