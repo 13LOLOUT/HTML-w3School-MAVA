@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+</style>
+</head>
+<body>
+
+<h2>Table Headers - Todos los tipos:</h2>
+
+<!-- Headers normales (horizontal) -->
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- Headers verticales (primera columna) -->
+<h3>Headers Verticales:</h3>
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>50</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- COLSPAN header múltiples columnas -->
+<h3>Colspan Header:</h3>
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+</table>
+
+<!-- Caption -->
+<h3>Con Caption:</h3>
+<table style="width:100%">
+  <caption>Ahorros Mensuales</caption>
+  <tr>
+    <th>Mes</th>
+    <th>Ahorro</th>
+  </tr>
+  <tr>
+    <td>Enero</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+
+</body>
+</html>
