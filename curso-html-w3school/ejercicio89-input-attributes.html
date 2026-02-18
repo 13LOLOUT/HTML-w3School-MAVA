@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 89 - Input Attributes</title>
+</head>
+<body>
+
+<h1>HTML Input Attributes - Todos los ejemplos</h1>
+
+<!-- 1. value (default) -->
+<h2>1. value</h2>
+<label for="fname">First name:</label><br>
+<input type="text" id="fname" name="fname" value="John"><br>
+
+<!-- 2. readonly -->
+<h2>2. readonly</h2>
+<label for="rname">Read-only:</label><br>
+<input type="text" id="rname" name="rname" value="No editable" readonly>
+
+<!-- 3. disabled -->
+<h2>3. disabled</h2>
+<label for="dname">Disabled:</label><br>
+<input type="text" id="dname" name="dname" value="No funciona" disabled>
+
+<!-- 4. size -->
+<h2>4. size</h2>
+<label for="big">Grande (50):</label><br>
+<input type="text" id="big" name="big" size="50"><br>
+<label for="small">PIN (4):</label><br>
+<input type="text" id="small" name="small" size="4">
+
+<!-- 5. maxlength -->
+<h2>5. maxlength</h2>
+<label for="pin">PIN (max 4):</label><br>
+<input type="text" id="pin" name="pin" maxlength="4" size="4">
+
+<!-- 6. min/max -->
+<h2>6. min/max</h2>
+<label for="date-max">Antes 1980:</label>
+<input type="date" id="date-max" max="1979-12-31"><br>
+<label for="date-min">Después 2000:</label>
+<input type="date" id="date-min" min="2000-01-02"><br>
+<label for="qty">Qty 1-5:</label>
+<input type="number" id="qty" min="1" max="5">
+
+<!-- 7. multiple -->
+<h2>7. multiple</h2>
+<label for="files">Files:</label>
+<input type="file" id="files" multiple>
+
+<!-- 8. pattern -->
+<h2>8. pattern</h2>
+<label for="code">Country code (3 letras):</label>
+<input type="text" id="code" pattern="[A-Za-z]{3}" title="3 letras">
+
+<!-- 9. placeholder -->
+<h2>9. placeholder</h2>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+
+<!-- 10. required -->
+<h2>10. required</h2>
+<label for="user">Username:</label>
+<input type="text" id="user" required>
+
+<!-- 11. step -->
+<h2>11. step</h2>
+<label for="points">Points (step 3):</label>
+<input type="number" id="points" step="3">
+
+<!-- 12. autofocus -->
+<h2>12. autofocus</h2>
+<label for="auto">Auto focus:</label>
+<input type="text" id="auto" autofocus>
+
+<!-- 13. autocomplete -->
+<h2>13. autocomplete</h2>
+<form autocomplete="on">
+    <input type="text" name="name" autocomplete="on"><br>
+    <input type="email" name="email" autocomplete="off">
+</form>
+
+<!-- 14. list -->
+<h2>14. list + datalist</h2>
+<input list="browsers">
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+</datalist>
+
+</body>
+</html>
