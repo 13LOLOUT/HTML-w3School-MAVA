@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 84 - Atributos Form</title>
+</head>
+<body>
+
+<h1>HTML Form Attributes - Todos los ejemplos</h1>
+
+<!-- 1. Action -->
+<h2>1. action="/action_page.php"</h2>
+<form action="/action_page.php">
+    <label for="fname1">First name:</label><br>
+    <input type="text" id="fname1" name="fname" value="John"><br>
+    <label for="lname1">Last name:</label><br>
+    <input type="text" id="lname1" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- 2. Target _blank -->
+<h2>2. target="_blank" (nueva pestaña)</h2>
+<form action="/action_page.php" target="_blank">
+    <input type="submit" value="Abrir nueva pestaña">
+</form>
+
+<!-- 3. Method GET vs POST -->
+<h2>3. method="get" vs "post"</h2>
+<form action="/action_page.php" method="get">
+    <input type="text" name="search">
+    <input type="submit" value="GET (visible URL)">
+</form>
+
+<form action="/action_page.php" method="post">
+    <input type="password" name="pwd">
+    <input type="submit" value="POST (seguro)">
+</form>
+
+<!-- 4. Autocomplete -->
+<h2>4. autocomplete="on/off"</h2>
+<form action="/action_page.php" autocomplete="on">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+</form>
+
+<!-- 5. Novalidate -->
+<h2>5. novalidate (sin validación)</h2>
+<form action="/action_page.php" novalidate>
+    <input type="email" required>
+    <input type="submit" value="Submit sin validar">
+</form>
+
+</body>
+</html>
