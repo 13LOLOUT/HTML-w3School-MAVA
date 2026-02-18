@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- VIEWPORT esencial para responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design - Todos ejemplos</title>
+    <style>
+        /* Responsive Images */
+        img { max-width: 100%; height: auto; }
+        
+        /* Responsive Text (vw) */
+        h1.resp-text { font-size: 10vw; }
+        
+        /* Media Query Layout */
+        .col { float: left; width: 20%; padding: 10px; }
+        .main { float: left; width: 60%; padding: 10px; }
+        
+        @media screen and (max-width: 800px) {
+            .col, .main { width: 100%; }
+        }
+        
+        /* Flexbox simple */
+        .flex-container { display: flex; flex-wrap: wrap; }
+        .flex-item { flex: 1 1 300px; padding: 20px; }
+        
+        /* Grid simple */
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px; }
+    </style>
+</head>
+<body>
+
+<h1 class="resp-text">¡Texto Responsive! (resize ventana)</h1>
+
+<!-- Responsive Images -->
+<h2>Responsive Images</h2>
+<img src="https://www.w3schools.com/html/img_girl.jpg" alt="Girl" style="width:100%; max-width:100%; height:auto;">
+
+<!-- Picture Element -->
+<h2>Picture (diferentes tamaños)</h2>
+<picture>
+    <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width: 600px)">
+    <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 1500px)">
+    <img src="https://www.w3schools.com/html/img_smallflower.jpg" alt="Flowers" style="width:100%;">
+</picture>
+
+<!-- Media Query Example -->
+<h2>Media Query (3 columnas → stack mobile)</h2>
+<div>
+    <div class="col">Left Menu</div>
+    <div class="main">Main Content</div>
+    <div class="col">Right Content</div>
+</div>
+
+<!-- Flexbox Layout -->
+<h2>CSS Flexbox</h2>
+<div class="flex-container">
+    <div class="flex-item"><h3>Columna 1</h3><p>Contenido flex...</p></div>
+    <div class="flex-item"><h3>Columna 2</h3><p>Responsive flexbox.</p></div>
+    <div class="flex-item"><h3>Columna 3</h3><p>Se adapta a móvil.</p></div>
+</div>
+
+<!-- Grid Layout -->
+<h2>CSS Grid</h2>
+<div class="grid-container">
+    <div><h3>Grid 1</h3><p>Auto-fit responsive.</p></div>
+    <div><h3>Grid 2</h3><p>Minmax columns.</p></div>
+    <div><h3>Grid 3</h3><p>Gap automático.</p></div>
+</div>
+
+<!-- W3.CSS Framework Demo -->
+<h2>W3.CSS Responsive</h2>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<div class="w3-container w3-teal">
+    <h1>W3.CSS Demo</h1>
+    <p>¡Resize responsive!</p>
+</div>
+<div class="w3-row-padding w3-margin-top">
+    <div class="w3-third w3-container w3-card">
+        <h3>London</h3>
+        <p>Capital de Inglaterra...</p>
+    </div>
+    <div class="w3-third w3-container w3-card">
+        <h3>Paris</h3>
+        <p>Ciudad del amor...</p>
+    </div>
+    <div class="w3-third w3-container w3-card">
+        <h3>Tokyo</h3>
+        <p>Capital de Japón...</p>
+    </div>
+</div>
+
+</body>
+</html>
