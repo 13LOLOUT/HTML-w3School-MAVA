@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- 1. TITLE (obligatorio, SEO) -->
+    <title>Mi Título Perfecto SEO</title>
+    
+    <!-- 2. META Charset -->
+    <meta charset="UTF-8">
+    
+    <!-- 3. META Viewport (responsive) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 4. META Description -->
+    <meta name="description" content="Tutorial HTML Head Elements">
+    
+    <!-- 5. META Keywords -->
+    <meta name="keywords" content="HTML, head, meta, title, viewport">
+    
+    <!-- 6. META Author -->
+    <meta name="author" content="Estudiante 6to Semestre">
+    
+    <!-- 7. STYLE interno -->
+    <style>
+        body { background-color: powderblue; }
+        h1 { color: red; }
+        p { color: blue; }
+    </style>
+    
+    <!-- 8. LINK CSS externo -->
+    <link rel="stylesheet" href="mystyle.css">
+    
+    <!-- 9. BASE URL + target -->
+    <base href="https://www.w3schools.com/" target="_blank">
+    
+    <!-- 10. SCRIPT JS -->
+    <script>
+        function miFuncion() {
+            document.getElementById("demo").innerHTML = "¡Hola JavaScript!";
+        }
+    </script>
+</head>
+<body>
+    <h1>HTML Head - Todos los Elementos</h1>
+    
+    <p>Contenido visible de la página...</p>
+    
+    <button onclick="miFuncion()">Click JS</button>
+    <p id="demo">Texto original</p>
+    
+    <!-- Imagen con base href automático -->
+    <img src="images/stickman.gif" alt="Stickman" width="100">
+</body>
+</html>
