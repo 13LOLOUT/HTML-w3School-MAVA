@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 103 - Web Storage</title>
+</head>
+<body>
+
+<h1>HTML Web Storage API</h1>
+
+<!-- Test soporte -->
+<p id="support">Cargando...</p>
+
+<!-- localStorage nombre/color -->
+<h2>localStorage</h2>
+<p id="localResult">localStorage...</p>
+<button onclick="localDemo()">Guardar localStorage</button>
+
+<!-- Contador clicks localStorage -->
+<h2>Contador localStorage</h2>
+<button onclick="clickCounterLocal()">Click Me!</button>
+<p id="localCounter">0 clicks</p>
+
+<!-- sessionStorage contador -->
+<h2>sessionStorage (por pestaña)</h2>
+<button onclick="clickCounterSession()">Click Session!</button>
+<p id="sessionCounter">0 clicks sesión</p>
+
+<script>
+if (typeof(Storage) !== "undefined") {
+    document.getElementById("support").innerHTML = "¡Tu navegador soporta Web Storage!";
+} else {
+    document.getElementById("support").innerHTML = "No soporta Web Storage.";
+}
+
+// localStorage demo
+function localDemo() {
+    localStorage.setItem("lastname", "Pérez");
+    localStorage.setItem("bgcolor", "lightblue");
+    document.getElementById("localResult").innerHTML = "Apellido: " + localStorage.getItem("lastname");
+    document.getElementById("localResult").style.backgroundColor = localStorage.getItem("bgcolor");
+}
+
+// Contador localStorage
+function clickCounterLocal() {
+    if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+    } else {
+        localStorage.clickcount = 1;
+    }
+    document.getElementById("localCounter").innerHTML = "Clicks: " + localStorage.clickcount;
+}
+
+// Contador sessionStorage
+function clickCounterSession() {
+    if (sessionStorage.clickcount) {
+        sessionStorage.clickcount = Number(sessionStorage.clickcount) + 1;
+    } else {
+        sessionStorage.clickcount = 1;
+    }
+    document.getElementById("sessionCounter").innerHTML = "Clicks sesión: " + sessionStorage.clickcount;
+}
+</script>
+
+</body>
+</html>
