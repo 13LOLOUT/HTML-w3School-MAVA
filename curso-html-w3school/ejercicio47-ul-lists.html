@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Menu horizontal */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.menu li {
+  float: left;
+}
+
+.menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<h2>Unordered Lists (ul) - Todos los tipos:</h2>
+
+<!-- DISC (default) -->
+<h3>Disc (default):</h3>
+<ul style="list-style-type:disc;">
+  <li>Coffee ☕</li>
+  <li>Tea 🫖</li>
+  <li>Milk 🥛</li>
+</ul>
+
+<!-- CIRCLE -->
+<h3>Circle:</h3>
+<ul style="list-style-type:circle;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- SQUARE -->
+<h3>Square:</h3>
+<ul style="list-style-type:square;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- NONE -->
+<h3>None (sin bullets):</h3>
+<ul style="list-style-type:none;">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+<!-- ANIDADAS -->
+<h3>Nested Lists:</h3>
+<ul>
+  <li>Coffee</li>
+  <li>Tea
+    <ul>
+      <li>Black tea</li>
+      <li>Green tea</li>
+    </ul>
+  </li>
+  <li>Milk</li>
+</ul>
+
+<!-- MENU HORIZONTAL -->
+<h3>Navigation Menu:</h3>
+<ul class="menu">
+  <li><a href="#home">Home 🏠</a></li>
+  <li><a href="#news">News 📰</a></li>
+  <li><a href="#contact">Contact 📞</a></li>
+  <li><a href="#about">About ℹ️</a></li>
+</ul>
+
+
+</body>
+</html>
