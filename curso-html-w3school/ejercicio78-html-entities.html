@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 78 - HTML Entities</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background-color: #f2f2f2; }
+        .demo { font-size: 24px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+
+<h1>HTML Character Entities - Todos los ejemplos</h1>
+
+<!-- Reserved characters -->
+<h2>Caracteres Reservados</h2>
+<p>Texto normal: 5 &lt; 10 → <strong>5 &lt; 10</strong></p>
+<p>Texto normal: if (x &gt; 5) → <strong>if (x &gt; 5)</strong></p>
+<p>Texto normal: rock &amp; roll → <strong>rock &amp; roll</strong></p>
+
+<!-- Non-breaking space -->
+<h2>Non-breaking Space &nbsp;</h2>
+<p class="demo">§&nbsp;10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10&nbsp;km/h&nbsp;&nbsp;10&nbsp;PM</p>
+
+<!-- Common entities table -->
+<h2>Entidades Comunes</h2>
+<table>
+    <tr><th>Resultado</th><th>Nombre</th><th>Número</th></tr>
+    <tr><td> </td><td>&nbsp;</td><td>&#160;</td></tr>
+    <tr><td>&lt;</td><td>&lt;</td><td>&#60;</td></tr>
+    <tr><td>&gt;</td><td>&gt;</td><td>&#62;</td></tr>
+    <tr><td>&amp;</td><td>&amp;</td><td>&#38;</td></tr>
+    <tr><td>&quot;</td><td>&quot;</td><td>&#34;</td></tr>
+    <tr><td>&#39;</td><td>&apos;</td><td>&#39;</td></tr>
+    <tr><td>¢</td><td>&cent;</td><td>&#162;</td></tr>
+    <tr><td>£</td><td>&pound;</td><td>&#163;</td></tr>
+    <tr><td>¥</td><td>&yen;</td><td>&#165;</td></tr>
+    <tr><td>€</td><td>&euro;</td><td>&#8364;</td></tr>
+    <tr><td>©</td><td>&copy;</td><td>&#169;</td></tr>
+    <tr><td>®</td><td>&reg;</td><td>&#174;</td></tr>
+    <tr><td>™</td><td>&trade;</td><td>&#8482;</td></tr>
+</table>
+
+<!-- Diacritical marks -->
+<h2>Diacritical Marks (Acentos)</h2>
+<p>a&#768; = à | a&#769; = á | a&#770; = â | a&#771; = ã</p>
+<p>O&#768; = Ò | O&#769; = Ó | O&#770; = Ô | O&#771; = Õ</p>
+
+<p>Ejemplo español: café&nbsp;&amp;&nbsp;señorita&nbsp;&quot;¡Hola!&quot;</p>
+
+</body>
+</html>
