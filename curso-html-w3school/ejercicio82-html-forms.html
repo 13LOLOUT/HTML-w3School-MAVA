@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 82 - HTML Forms</title>
+</head>
+<body>
+
+<h1>HTML Forms - Todos los ejemplos</h1>
+
+<!-- Text Fields + Label -->
+<h2>1. Text Fields</h2>
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
+</form>
+
+<!-- Radio Buttons -->
+<h2>2. Radio Buttons</h2>
+<form>
+    <p>Choose favorite:</p>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+</form>
+
+<!-- Checkboxes -->
+<h2>3. Checkboxes</h2>
+<form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1">I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2">I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3">I have a boat</label>
+</form>
+
+<!-- Submit Button + action -->
+<h2>4. Submit Button</h2>
+<form action="/action_page.php">
+    <label for="fname-submit">First name:</label><br>
+    <input type="text" id="fname-submit" name="fname" value="John"><br>
+    <label for="lname-submit">Last name:</label><br>
+    <input type="text" id="lname-submit" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Sin name (NO se envía) -->
+<h2>5. Sin name = NO enviado</h2>
+<form action="/action_page.php">
+    <label for="fname-no">First name (NO name):</label><br>
+    <input type="text" id="fname-no" value="NO enviado"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
