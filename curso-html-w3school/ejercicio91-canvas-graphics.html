@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 91 - Canvas Graphics</title>
+</head>
+<body>
+
+<h1>HTML Canvas - Todos los ejemplos</h1>
+
+<!-- Canvas básico -->
+<h2>1. Canvas básico con borde</h2>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #000;">
+    Tu navegador no soporta canvas.
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.fillStyle = "#FF0000";
+ctx.fillRect(0, 0, 150, 75);
+</script>
+
+<!-- Línea -->
+<h2>2. Línea</h2>
+<canvas id="lineCanvas" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c2 = document.getElementById("lineCanvas");
+var ctx2 = c2.getContext("2d");
+ctx2.moveTo(0, 0);
+ctx2.lineTo(200, 100);
+ctx2.stroke();
+</script>
+
+<!-- Círculo -->
+<h2>3. Círculo</h2>
+<canvas id="circleCanvas" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c3 = document.getElementById("circleCanvas");
+var ctx3 = c3.getContext("2d");
+ctx3.beginPath();
+ctx3.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx3.stroke();
+</script>
+
+<!-- Texto Fill -->
+<h2>4. Texto Fill</h2>
+<canvas id="textCanvas" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c4 = document.getElementById("textCanvas");
+var ctx4 = c4.getContext("2d");
+ctx4.font = "30px Arial";
+ctx4.fillText("¡Hola Mundo!", 10, 50);
+</script>
+
+<!-- Texto Stroke -->
+<h2>5. Texto Stroke</h2>
+<canvas id="strokeText" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c5 = document.getElementById("strokeText");
+var ctx5 = c5.getContext("2d");
+ctx5.font = "30px Arial";
+ctx5.strokeText("¡Hola Mundo!", 10, 50);
+</script>
+
+<!-- Linear Gradient -->
+<h2>6. Linear Gradient</h2>
+<canvas id="gradient1" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c6 = document.getElementById("gradient1");
+var ctx6 = c6.getContext("2d");
+var grd = ctx6.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx6.fillStyle = grd;
+ctx6.fillRect(10, 10, 150, 80);
+</script>
+
+<!-- Radial Gradient -->
+<h2>7. Radial Gradient</h2>
+<canvas id="gradient2" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c7 = document.getElementById("gradient2");
+var ctx7 = c7.getContext("2d");
+var grd = ctx7.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx7.fillStyle = grd;
+ctx7.fillRect(10, 10, 150, 80);
+</script>
+
+<!-- Imagen (simulada con rect) -->
+<h2>8. Imagen (demo rect)</h2>
+<canvas id="imgCanvas" width="200" height="100" style="border:1px solid #ccc;"></canvas>
+<script>
+var c8 = document.getElementById("imgCanvas");
+var ctx8 = c8.getContext("2d");
+ctx8.fillStyle = "orange";
+ctx8.fillRect(10, 10, 180, 80);
+ctx8.fillStyle = "white";
+ctx8.font = "20px Arial";
+ctx8.fillText("Imagen aquí", 50, 55);
+</script>
+
+</body>
+</html>
