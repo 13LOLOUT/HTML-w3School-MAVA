@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 87 - Todos Input Types</title>
+</head>
+<body>
+
+<h1>HTML Input Types - Completos</h1>
+
+<!-- Text -->
+<h2>text</h2>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname">
+
+<!-- Password -->
+<h2>password</h2>
+<label for="pwd">Password:</label>
+<input type="password" id="pwd" name="pwd">
+
+<!-- Submit -->
+<h2>submit</h2>
+<form action="/action">
+    <input type="text" name="name">
+    <input type="submit" value="Submit">
+</form>
+
+<!-- Reset -->
+<h2>reset</h2>
+<form>
+    <input type="text" value="John">
+    <input type="reset" value="Reset">
+</form>
+
+<!-- Radio -->
+<h2>radio</h2>
+<form>
+    <input type="radio" id="html" name="lang" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="lang" value="CSS">
+    <label for="css">CSS</label>
+</form>
+
+<!-- Checkbox -->
+<h2>checkbox</h2>
+<form>
+    <input type="checkbox" id="bike" name="vehicle" value="Bike">
+    <label for="bike">Bike</label><br>
+    <input type="checkbox" id="car" name="vehicle" value="Car">
+    <label for="car">Car</label>
+</form>
+
+<!-- Button -->
+<h2>button</h2>
+<input type="button" onclick="alert('Click!')" value="Click Me">
+
+<!-- Color -->
+<h2>color</h2>
+<label for="favcolor">Color:</label>
+<input type="color" id="favcolor" name="favcolor">
+
+<!-- Date -->
+<h2>date</h2>
+<label for="birthday">Birthday:</label>
+<input type="date" id="birthday" name="birthday">
+
+<!-- Datetime-local -->
+<h2>datetime-local</h2>
+<label for="bdaytime">Birthday time:</label>
+<input type="datetime-local" id="bdaytime" name="bdaytime">
+
+<!-- Email -->
+<h2>email</h2>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+
+<!-- File -->
+<h2>file</h2>
+<label for="file">File:</label>
+<input type="file" id="file" name="file">
+
+<!-- Hidden -->
+<h2>hidden</h2>
+<form>
+    <input type="hidden" name="id" value="123">
+    <input type="submit">
+</form>
+
+<!-- Image (simulado) -->
+<h2>image</h2>
+<input type="image" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjQwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMDBiZmZmIi8+PHRleHQgeD0iNTAlIiB5PSI2NSUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiPlN1Ym1pdDwvdGV4dD48L3N2Zz4=" alt="Submit">
+
+<!-- Month -->
+<h2>month</h2>
+<label for="month">Month:</label>
+<input type="month" id="month" name="month">
+
+<!-- Number -->
+<h2>number</h2>
+<label for="quantity">Quantity (1-5):</label>
+<input type="number" id="quantity" name="quantity" min="1" max="5" step="1">
+
+<!-- Range -->
+<h2>range</h2>
+<label for="vol">Volume (0-50):</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+
+<!-- Search -->
+<h2>search</h2>
+<label for="gsearch">Search:</label>
+<input type="search" id="gsearch" name="gsearch">
+
+<!-- Tel -->
+<h2>tel</h2>
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+<!-- Time -->
+<h2>time</h2>
+<label for="time">Time:</label>
+<input type="time" id="time" name="time">
+
+<!-- URL -->
+<h2>url</h2>
+<label for="url">URL:</label>
+<input type="url" id="url" name="url">
+
+<!-- Week -->
+<h2>week</h2>
+<label for="week">Week:</label>
+<input type="week" id="week" name="week">
+
+</body>
+</html>
