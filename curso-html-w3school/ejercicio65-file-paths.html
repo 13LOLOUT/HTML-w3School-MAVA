@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Ejercicio 65 - Rutas de Archivos HTML</title>
+</head>
+<body>
+
+<h1>HTML File Paths - Todos los ejemplos W3Schools</h1>
+
+<!-- 1. Misma carpeta -->
+<h2>1. "picture.jpg" (misma carpeta)</h2>
+<img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Misma carpeta">
+
+<!-- 2. Subcarpeta -->
+<h2>2. "images/picture.jpg" (subcarpeta images/)</h2>
+<img src="https://www.w3schools.com/images/colorpicker.gif" alt="Subcarpeta">
+
+<!-- 3. Raíz del sitio -->
+<h2>3. "/images/picture.jpg" (raíz)</h2>
+<img src="https://www.w3schools.com/w3images/lights.jpg" alt="Raíz del sitio">
+
+<!-- 4. Carpeta padre -->
+<h2>4. "../picture.jpg" (padre)</h2>
+<img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Carpeta padre">
+
+<!-- 5. Ruta absoluta completa -->
+<h2>5. Absolute: https://...</h2>
+<img src="https://www.w3schools.com/html/pic_lighthouse.jpg" alt="Ruta absoluta">
+
+<!-- Best Practice -->
+<h2>Mejor práctica</h2>
+<p>Usar rutas <strong>relativas</strong> para portabilidad (localhost, dominios futuros).</p>
+
+<!-- Otros usos -->
+<h2>Otros: CSS, JS, páginas</h2>
+<link rel="stylesheet" href="estilos.css">
+<script src="script.js"></script>
+<a href="../pagina.html">Página padre</a>
+
+</body>
+</html>
