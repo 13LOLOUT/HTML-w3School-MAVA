@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 102 - Drag and Drop</title>
+    <style>
+        #div1, #div2 { width: 200px; height: 200px; margin: 10px; padding: 10px; border: 1px solid #aaa; float: left; }
+        #img1 { width: 100px; }
+    </style>
+</head>
+<body>
+
+<h1>HTML Drag and Drop - Todos ejemplos</h1>
+
+<!-- Drag img a div -->
+<h2>1. Imagen → Div</h2>
+<div id="div1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">Suelta aquí</div>
+
+<img id="img1" src="https://www.w3schools.com/html/img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" alt="W3Schools Logo" width="336" height="69">
+
+<script>
+function dragstartHandler(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function dragoverHandler(ev) {
+    ev.preventDefault();
+}
+
+function dropHandler(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<!-- h1 → div -->
+<h2>2. H1 → Div</h2>
+<div id="divh1" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)" style="clear:both;"></div>
+<h1 id="h1" draggable="true" ondragstart="dragstartHandler(event)">W3Schools.com - Arrastra</h1>
+
+<!-- Link → div -->
+<h2>3. Link → Div</h2>
+<div id="divlink" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)"></div>
+<a id="link1" href="https://www.w3schools.com" draggable="true" ondragstart="dragstartHandler(event)">W3Schools Link</a>
+
+<!-- Bidireccional img entre 2 divs -->
+<h2>4. Bidireccional Div ↔ Div</h2>
+<div id="divA" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">Div A</div>
+<div id="divB" ondrop="dropHandler(event)" ondragover="dragoverHandler(event)">Div B</div>
+<img id="dragImg" src="https://www.w3schools.com/html/img_logo.gif" draggable="true" ondragstart="dragstartHandler(event)" width="100">
+
+</body>
+</html>
