@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 90 - form* Attributes</title>
+</head>
+<body>
+
+<h1>HTML Input form* Attributes</h1>
+
+<!-- 1. form (input fuera del form) -->
+<h2>1. form="form1"</h2>
+<form action="/action_page.php" id="form1">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br>
+    <input type="submit" value="Submit">
+</form>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname" form="form1">
+
+<!-- 2. formaction -->
+<h2>2. formaction (2 submits diferentes)</h2>
+<form action="/action_page.php">
+    <label for="f1">Name:</label>
+    <input type="text" id="f1" name="name"><br><br>
+    <input type="submit" value="Submit normal">
+    <input type="submit" formaction="/action_page2.php" value="Submit Admin">
+</form>
+
+<!-- 3. formenctype -->
+<h2>3. formenctype</h2>
+<form action="/action_page.php" method="post">
+    <input type="text" name="name"><br>
+    <input type="submit" value="Default">
+    <input type="submit" formenctype="multipart/form-data" value="Multipart">
+</form>
+
+<!-- 4. formmethod -->
+<h2>4. formmethod GET/POST</h2>
+<form action="/action_page.php" method="get">
+    <input type="text" name="data"><br>
+    <input type="submit" value="GET">
+    <input type="submit" formmethod="post" value="POST">
+</form>
+
+<!-- 5. formtarget -->
+<h2>5. formtarget _blank</h2>
+<form action="/action_page.php">
+    <input type="text" name="test"><br>
+    <input type="submit" value="Normal">
+    <input type="submit" formtarget="_blank" value="New Tab">
+</form>
+
+<!-- 6. formnovalidate -->
+<h2>6. formnovalidate</h2>
+<form action="/action_page.php">
+    <input type="email" name="email"><br>
+    <input type="submit" value="Validar">
+    <input type="submit" formnovalidate value="Sin validar">
+</form>
+
+<!-- 7. novalidate (form) -->
+<h2>7. novalidate (form completo)</h2>
+<form action="/action_page.php" novalidate>
+    <input type="email" required>
+    <input type="submit" value="Sin validar">
+</form>
+
+</body>
+</html>
