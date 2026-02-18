@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 95 - HTML Video</title>
+</head>
+<body>
+
+<h1>HTML Video - Todos los ejemplos</h1>
+
+<!-- Video básico con controls + sources múltiples -->
+<h2>1. Video básico</h2>
+<video width="320" height="240" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+    Tu navegador no soporta video.
+</video>
+
+<!-- Autoplay muted -->
+<h2>2. Autoplay + muted</h2>
+<video width="320" height="240" autoplay muted loop>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    No soportado.
+</video>
+
+<!-- Video pequeño sin controls -->
+<h2>3. Video pequeño</h2>
+<video width="200" height="150">
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+
+<!-- Con track subtítulos (demo) -->
+<h2>4. Con &lt;track&gt; (subtítulos demo)</h2>
+<video width="320" height="240" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+    <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+    No soportado.
+</video>
+
+<!-- Formatos soportados -->
+<h2>Formatos</h2>
+<p>MP4: video/mp4 | WebM: video/webm | Ogg: video/ogg</p>
+
+<!-- DOM JS demo simple -->
+<h2>5. JS Controls (Play/Pause)</h2>
+<video id="myVideo" width="320" height="240" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+</video>
+<button onclick="playPause()">Play/Pause</button>
+<script>
+var video = document.getElementById("myVideo");
+function playPause() {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}
+</script>
+
+</body>
+</html>
