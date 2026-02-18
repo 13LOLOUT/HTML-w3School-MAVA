@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Mi Primer JavaScript</h2>
+
+<p id="demo">Texto original</p>
+
+<button onclick="document.getElementById('demo').innerHTML = '¡Hola JavaScript!'">Cambiar Contenido</button>
+
+<h3>Cambia estilos:</h3>
+<p id="demo2">Texto con estilos</p>
+<button onclick="document.getElementById('demo2').style.fontSize='25px';document.getElementById('demo2').style.color='red';document.getElementById('demo2').style.backgroundColor='yellow'">Estilos</button>
+
+<h3>Fecha y hora:</h3>
+<p id="reloj"></p>
+<button onclick="document.getElementById('reloj').innerHTML = Date()">Fecha Actual</button>
+
+<!-- Noscript fallback -->
+<script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Tu navegador no soporta JavaScript</noscript>
+
+</body>
+</html>
