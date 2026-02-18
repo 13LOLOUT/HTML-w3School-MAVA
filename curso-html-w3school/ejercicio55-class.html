@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Clase city para divs */
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Clase note para spans */
+.note {
+  font-size: 120%;
+  color: red;
+  font-weight: bold;
+}
+
+/* Múltiples clases */
+.main {
+  border: 3px solid gold;
+}
+
+/* Diferentes elementos misma clase */
+.close {
+  background-color: lightcoral;
+  padding: 10px;
+  margin: 5px;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Class Attribute:</h2>
+
+<!-- Múltiples elementos MISMA clase -->
+<div class="city">
+  <h2>London</h2>
+  <p>Capital de Inglaterra</p>
+</div>
+
+<div class="city">
+  <h2>Paris</h2>
+  <p>Capital de Francia</p>
+</div>
+
+<!-- SPAN con clase -->
+<h1>Mi <span class="note">IMPORTANTE</span> Título</h1>
+<p>Este es texto <span class="note">importante</span>.</p>
+
+<!-- MÚLTIPLES CLASES -->
+<h2 class="city main">London (city + main)</h2>
+
+<!-- DIFERENTES ELEMENTOS misma clase -->
+<h3 class="close">Cerrar</h3>
+<p class="close">Información</p>
+
+</body>
+</html>
