@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Estilos botones */
+.btn {
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-green { background-color: #04AA6D; color: white; }
+.btn-blue { background-color: #008CBA; color: white; }
+.btn-red { background-color: #f44336; color: white; }
+
+.btn:hover { opacity: 0.8; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+</style>
+</head>
+<body>
+
+<h2>HTML Buttons - Todos los tipos:</h2>
+
+<!-- Botón básico -->
+<button>Click Me</button>
+
+<!-- Tipos de botón -->
+<button type="button">Normal (button)</button>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+<!-- Botones con CSS -->
+<button class="btn btn-green">Green Button</button>
+<button class="btn btn-blue">Blue Button</button>
+<button class="btn btn-red">Red Button</button>
+
+<!-- Deshabilitado -->
+<button disabled>Disabled Button</button>
+
+<!-- JavaScript onclick -->
+<button onclick="alert('¡Hola!')">Alert Button</button>
+
+<!-- Formulario con botones -->
+<form action="#" style="margin:20px 0;">
+  <input type="text" placeholder="Nombre" style="padding:8px;">
+  <button type="submit">Enviar</button>
+  <button type="reset">Limpiar</button>
+</form>
+
+
+</body>
+</html>
