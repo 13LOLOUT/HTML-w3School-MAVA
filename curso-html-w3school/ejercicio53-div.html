@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Centrado */
+.center {
+  width: 300px;
+  margin: auto;
+  background-color: #f0f8ff;
+  padding: 15px;
+}
+
+/* Float side-by-side */
+.float-container {
+  width: 100%;
+  overflow: auto;
+}
+.float-container div {
+  width: 33%;
+  float: left;
+  background-color: #e6f3ff;
+  padding: 15px;
+  margin: 5px;
+}
+
+/* Inline-block */
+.inline-block div {
+  width: 30%;
+  display: inline-block;
+  background-color: #fff0f5;
+  padding: 15px;
+  margin: 10px;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+}
+.flex-container > div {
+  width: 33%;
+  background-color: #f0fff0;
+  padding: 15px;
+  margin: 5px;
+}
+
+/* Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  gap: 10px;
+}
+.grid-item {
+  background-color: #f5f5f5;
+  padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<h2>DIV Container - Todos los métodos:</h2>
+
+<!-- DIV básico (block) -->
+<p>Lorem Ipsum <div style="background:lightblue;">Soy DIV BLOCK</div> dolor sit amet.</p>
+
+<!-- DIV como contenedor centrado -->
+<div class="center">
+  <h2>London</h2>
+  <p>Capital de Inglaterra, 9+ millones habitantes.</p>
+</div>
+
+<!-- Múltiples DIVs -->
+<div>
+  <h3>London</h3><p>Capital Inglaterra</p>
+</div>
+<div>
+  <h3>Oslo</h3><p>Capital Noruega</p>
+</div>
+<div>
+  <h3>Rome</h3><p>Capital Italia</p>
+</div>
+
+<!-- FLOAT side-by-side -->
+<h3>Float:</h3>
+<div class="float-container">
+  <div>London</div>
+  <div>Oslo</div>
+  <div>Rome</div>
+</div>
+
+<!-- INLINE-BLOCK -->
+<h3>Inline-block:</h3>
+<div class="inline-block">
+  <div>London</div>
+  <div>Oslo</div>
+  <div>Rome</div>
+</div>
+
+
+</body>
+</html>
