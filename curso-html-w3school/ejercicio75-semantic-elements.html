@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 75 - Semantic Elements</title>
+    <style>
+        article { margin: 20px 0; padding: 20px; background: #f9f9f9; border-left: 4px solid #007bff; }
+        aside { width: 30%; float: right; background: lightgray; padding: 15px; margin-left: 15px; font-style: italic; }
+        figure { text-align: center; margin: 20px 0; }
+        nav a { margin: 0 10px; }
+        .clear { clear: both; }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Mi Sitio Semántico</h1>
+    <p>Usando todos los elementos semánticos HTML5</p>
+</header>
+
+<!-- NAV -->
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#about">Acerca</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<!-- SECTION -->
+<section>
+    <h2>Secciones Temáticas</h2>
+    
+    <!-- ARTICLE anidado -->
+    <article>
+        <header>
+            <h2>¿Qué hace WWF?</h2>
+            <p>Misión WWF:</p>
+        </header>
+        <p>La misión de WWF es detener la degradación del medio ambiente...</p>
+        <footer>
+            <p>Por: Juan Pérez <a href="mailto:juan@example.com">juan@example.com</a></p>
+        </footer>
+    </article>
+</section>
+
+<!-- MAIN (contenido principal) -->
+<main>
+    <!-- Múltiples ARTICLES -->
+    <section>
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Navegador de Google, lanzado 2008...</p>
+        </article>
+        
+        <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Código abierto de Mozilla...</p>
+        </article>
+        
+        <article>
+            <h2>Microsoft Edge</h2>
+            <p>Reemplazó Internet Explorer...</p>
+        </article>
+    </section>
+</main>
+
+<!-- ASIDE (sidebar) -->
+<aside>
+    <h3>Epcot Center</h3>
+    <p>Parque temático en Walt Disney World...</p>
+</aside>
+<div class="clear"></div>
+
+<!-- FIGURE + FIGCAPTION -->
+<figure>
+    <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" style="width:100%;">
+    <figcaption>Fig.1 - Trulli, Puglia, Italia.</figcaption>
+</figure>
+
+<!-- DETAILS + SUMMARY -->
+<details>
+    <summary>Detalles adicionales (click)</summary>
+    <p>Contenido oculto/mostrable.</p>
+</details>
+
+<!-- MARK (highlighted text) -->
+<p>Texto <mark>destacado/highlighted</mark> importante.</p>
+
+<!-- TIME -->
+<p>Publicado el <time datetime="2026-02-17">17 de febrero 2026</time>.</p>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 - Derechos reservados | <a href="#top">Volver arriba</a></p>
+</footer>
+
+</body>
+</html>
