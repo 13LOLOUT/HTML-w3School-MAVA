@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Ejercicio 101 - Geolocation API</title>
+</head>
+<body>
+
+<h1>HTML Geolocation API</h1>
+<button onclick="getLocation()">Obtener Ubicación</button>
+<p id="demo">Tu ubicación aparecerá aquí...</p>
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(success, error);
+    } else {
+        x.innerHTML = "Geolocation no soportada.";
+    }
+}
+
+function success(position) {
+    x.innerHTML = "Latitud: " + position.coords.latitude +
+    "<br>Longitud: " + position.coords.longitude +
+    "<br>Precisión: " + position.coords.accuracy + " metros" +
+    "<br>Altitud: " + (position.coords.altitude || "N/A") + " m" +
+    "<br>Velocidad: " + (position.coords.speed || "N/A") + " m/s";
+}
+
+function error(err) {
+    switch(err.code) {
+        case err.PERMISSION_DENIED:
+            x.innerHTML = "Permiso denegado.";
+            break;
+        case err.POSITION_UNAVAILABLE:
+            x.innerHTML = "Ubicación no disponible.";
+            break;
+        case err.TIMEOUT:
+            x.innerHTML = "Timeout obteniendo ubicación.";
+            break;
+        case err.UNKNOWN_ERROR:
+            x.innerHTML = "Error desconocido.";
+            break;
+    }
+}
+</script>
+
+<h2>Watch Position (continuo)</h2>
+<button onclick="watchLocation()">Watch Location</button>
+<script>
+var watchId;
+function watchLocation() {
+    if (navigator.geolocation) {
+        var watchId = navigator.geolocation.watchPosition(success, error);
+    }
+}
+function stopWatch() {
+    navigator.geolocation.clearWatch(watchId);
+}
+</script>
+
+<p><strong>Nota:</strong> Requiere HTTPS + permiso usuario. Mejor en móvil GPS.</p>
+
+</body>
+</html>
